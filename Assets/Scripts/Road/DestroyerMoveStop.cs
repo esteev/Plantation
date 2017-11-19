@@ -19,5 +19,6 @@ public class DestroyerMoveStop : MonoBehaviour {
 	void starter()
 	{
 		started = true;
+		Destroy (gameObject.GetComponent<MeshRenderer> ());
 	}
 }

@@ -8,7 +8,7 @@ public class VehicleSpawner : MonoBehaviour {
 	private Vector3 offset = Vector3.zero;
 
 	void Start () {
-		Invoke("spawn", Random.Range (MIN_TIME, MAX_TIME));
+		Invoke("spawn", Random.Range (0f, MIN_TIME));
 	}
 	
 	void spawn () {
