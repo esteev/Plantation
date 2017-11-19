@@ -9,12 +9,13 @@ public class KaChow : MonoBehaviour {
 
 	public GameObject[] vehicles;
 	public GameObject[] waterItems;
+	public GameObject[] trees;
 	public GameObject trainPrefab;
 
 	public int scoreEndless = 0;
 
 	public float vehicleSpeed = 0.1f;
-	public float roadSystemMoveSpeed = 0.2f;
+	public float roadSystemMoveSpeed = 0.3f;
 
 	void Awake () {
 		instance = this;

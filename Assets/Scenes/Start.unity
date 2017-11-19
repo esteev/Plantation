@@ -396,11 +396,28 @@ MonoBehaviour:
   waterItems:
   - {fileID: 1113487651374168, guid: f23b33c5d85cc944d98a52226493a1c7, type: 2}
   - {fileID: 1196039938769386, guid: 0b559af56c9721145b7a0354b81be678, type: 2}
+  trees:
+  - {fileID: 129214, guid: 84abc0b4a3d89cf42994a49c7f27d79e, type: 2}
+  - {fileID: 147522, guid: 13066d2cc27d1c144aa886195e71c0d1, type: 2}
+  - {fileID: 165086, guid: 57588682a49c9734ba42be72c75a972a, type: 2}
+  - {fileID: 171682, guid: a6766644c341bfa4990b0b8fd2bd5a9e, type: 2}
+  - {fileID: 149102, guid: b355ae641a13f7e46a7f8dc0af2ae4d9, type: 2}
+  - {fileID: 152768, guid: 837a05da51979184a8db2566af1cf8d0, type: 2}
+  - {fileID: 127092, guid: 1e815ee9bd4cc5b418612dbe295b212e, type: 2}
+  - {fileID: 193842, guid: 3e4b1bd61121a1346a22a9fbc2ea6cc9, type: 2}
+  - {fileID: 148196, guid: a34c069ca68bbe9408a2e3f55006d5cc, type: 2}
+  - {fileID: 172816, guid: e41baa27d2fa36c4dae25b2bff869b02, type: 2}
+  - {fileID: 122276, guid: 49389d455d37d9e44996677995592335, type: 2}
+  - {fileID: 150418, guid: 18a5794f3701f644bb38c8db4d83f2d5, type: 2}
+  - {fileID: 153724, guid: 65f8a80e9d24c2b4a8878f4c6902f79b, type: 2}
+  - {fileID: 104176, guid: c49c4c24542d2844ba69fe16014abb37, type: 2}
+  - {fileID: 146902, guid: d83c25543b2e68248b07e6cdba00d71a, type: 2}
+  - {fileID: 150688, guid: 2c0b7df01c33a2643bc67c60fd616e8c, type: 2}
   trainPrefab: {fileID: 1876009357945184, guid: 044b158471857e644bf95c3d13773d70,
     type: 2}
   scoreEndless: 0
   vehicleSpeed: 0.1
-  roadSystemMoveSpeed: 0.1
+  roadSystemMoveSpeed: 0.3
 --- !u!1001 &990553778
 Prefab:
   m_ObjectHideFlags: 0

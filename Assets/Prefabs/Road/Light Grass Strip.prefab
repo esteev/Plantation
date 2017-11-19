@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 23248032874149192}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 23014268807238292}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 23543752122741024}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 23386061461855356}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 23370765991091292}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 23198506047152198}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 23776141811878374}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 23842105550136798}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -631,6 +631,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4902017705943748}
+  - component: {fileID: 114682814465513710}
   m_Layer: 0
   m_Name: Light Grass Strip
   m_TagString: Strip
@@ -669,7 +670,7 @@ GameObject:
   - component: {fileID: 23097639746494706}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,7 +814,7 @@ GameObject:
   - component: {fileID: 23245845737648148}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Type2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3691,3 +3692,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114682814465513710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652135578014928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e06269301dc5b45a082fa1e7790396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -10,6 +10,9 @@ TagManager:
   - RotatedRoad
   - Destroyer
   - Strip
+  - Road
+  - Type1
+  - Type2
   layers:
   - Default
   - TransparentFX
