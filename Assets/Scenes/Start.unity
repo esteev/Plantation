@@ -393,6 +393,9 @@ MonoBehaviour:
   - {fileID: 1061406275264692, guid: dbe4d06b13d5b604d8660054a11e6470, type: 2}
   - {fileID: 1516693954434480, guid: 46ec90be2e2959a479e8594a4d296038, type: 2}
   - {fileID: 1344621865355576, guid: 28c855ad48625fb4ebd5b9f3e86f51f4, type: 2}
+  waterItems:
+  - {fileID: 1113487651374168, guid: f23b33c5d85cc944d98a52226493a1c7, type: 2}
+  - {fileID: 1196039938769386, guid: 0b559af56c9721145b7a0354b81be678, type: 2}
   trainPrefab: {fileID: 1876009357945184, guid: 044b158471857e644bf95c3d13773d70,
     type: 2}
   scoreEndless: 0
@@ -436,6 +439,10 @@ Prefab:
     - target: {fileID: 4114264122246128, guid: aac04f957c1d41940a22a7c65754b4c7, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839499947869542, guid: aac04f957c1d41940a22a7c65754b4c7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aac04f957c1d41940a22a7c65754b4c7, type: 2}

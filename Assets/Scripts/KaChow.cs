@@ -8,6 +8,7 @@ public class KaChow : MonoBehaviour {
 	public static KaChow Instance{get{ return instance; }}
 
 	public GameObject[] vehicles;
+	public GameObject[] waterItems;
 	public GameObject trainPrefab;
 
 	public int scoreEndless = 0;
