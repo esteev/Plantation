@@ -21,7 +21,7 @@ public class VehicleSpawner : MonoBehaviour {
 			vehicle.transform.Rotate (new Vector3 (0f, 180f, 0f));
 		}
 		vehicle.transform.localPosition = offset;
-		int neg = (Random.Range (0, MAX_TIME)>MAX_TIME/2)?1:-1;
+//		int neg = (Random.Range (0, MAX_TIME)>MAX_TIME/2)?1:-1;
 		Invoke("spawn", Random.Range (MIN_TIME, MAX_TIME));
 	}
 }

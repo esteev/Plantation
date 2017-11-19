@@ -5,7 +5,7 @@ using UnityEngine;
 public class GreenerySpawner : MonoBehaviour {
 
 	private float type1GreeneryChance = 0.2f;
-	private float type2GreeneryChance = 0.5f;
+	private float type2GreeneryChance = 0.4f;
 
 	void Start () {
 		greenify ();

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour {
 
@@ -32,7 +33,7 @@ public class Spawner : MonoBehaviour {
 		tempInst.transform.SetParent (roadSystemHolder.transform);
 		prevStrip = lGStrip;
 		currentPos = currentPos + new Vector3 (-1*stripWidth , 0f, 0f);
-		for (int i = 1; i < n; i++) 
+		for (int i = 1; i < n;i+=times) 
 		{
 			times = 1;
 			float chance = Random.Range (0.0f, 1.0f);
@@ -74,8 +75,9 @@ public class Spawner : MonoBehaviour {
 			prevStrip = curStrip;
 			for (int j = 0; j < times; j++) 
 			{
-				GameObject tempInst1 = Instantiate (curStrip, currentPos, Quaternion.identity);
+				GameObject tempInst1 = Instantiate (curStrip, currentPos, Quaternion.identity) as GameObject;
 				tempInst1.transform.SetParent (roadSystemHolder.transform);
+				tempInst1.transform.localPosition = currentPos;
 				tempInst1.AddComponent (System.Type.GetType("RoadVariables"));
 				tempInst1.GetComponent<RoadVariables> ().roadObjectSpeed = Random.Range (MIN_SPEED, MAX_SPEED);
 				if (Random.Range (0.0f, 1.0f) > 0.5f) 
@@ -83,9 +85,21 @@ public class Spawner : MonoBehaviour {
 					tempInst1.transform.Rotate (new Vector3(0f,180f,0f));
 					tempInst1.tag = "RotatedRoad";
 				}
-				currentPos = currentPos + new Vector3 (-1*stripWidth , 0f, 0f);	
+				print (tempInst1.ToString() + currentPos.ToString());
+				currentPos = currentPos + new Vector3 (-1*stripWidth , 0f, 0f);
 			}
 			//GameObject tempRoad = Instantiate(curStrip, roadSystemHolder.transform.position, Quaternion.identity);
+		}
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown (KeyCode.R)) {
+			SceneManager.LoadScene ("Cross");	
+		}
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();	
 		}
 	}
 
