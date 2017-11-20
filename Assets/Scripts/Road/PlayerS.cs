@@ -1,65 +1,61 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerS : MonoBehaviour {
 
-	private const float stripWidth = 0.4f;
-
-	public Vector3 nextDir;
-
-	public float jumpForce=100;
-
-	public float speed=5;
-	public float speedRot=100;
-
-	public float rotationOffset;
-
-	Rigidbody rb;
-
-	public Vector3 curPosition;
+	private float speed = 5f;
+	private float sensitivity = 0.001f;
+	private Animator animator;
+	private Vector3 nextVec = new Vector3(0f, 0f, -0.4f), targetPos;
+	private bool jump = false;
+	private int nJump = 0;
+	private List<Vector3> arrayPos = new List<Vector3>();
 
 	void Start () {
-		rb = GetComponent<Rigidbody> ();
-
-		curPosition=transform.position;
-
+		animator = transform.GetChild(0).GetComponent<Animator> ();
 	}
 
 	void Update () {
-
-
-		if(transform.position!= new Vector3(curPosition.x,transform.position.y,curPosition.z) +nextDir)
+		if(Input.GetMouseButtonDown(0))
 		{
+		}
 
-			transform.position=Vector3.MoveTowards (transform.position, new Vector3 (curPosition.x, transform.position.y, curPosition.z) + nextDir, speed * Time.deltaTime);
-
-			transform.rotation = Quaternion.RotateTowards (transform.rotation, Quaternion.LookRotation (Quaternion.Euler(0,rotationOffset,0)*nextDir), speedRot * Time.deltaTime);
-
-		}else{
-			nextDir = Vector3.zero;
-			curPosition=transform.position;
-			curPosition.x = Mathf.Round (curPosition.x);
-			curPosition.y = Mathf.Round (curPosition.y);
-
-
-			if (Input.GetAxisRaw ("Horizontal") != 0) {
-
-				nextDir.z = Mathf.Sign(-Input.GetAxisRaw ("Horizontal")) * stripWidth;
-	//			nextDir.z = 0.4f;
-				Move ();
-
-			} else if (Input.GetAxisRaw ("Vertical") != 0) {
-
-
-				nextDir.x = Mathf.Sign(Input.GetAxisRaw ("Vertical")) * stripWidth;
-		//		nextDir.x = 0.4f;
-				Move ();
+		if (jump) 
+		{
+			if (Mathf.Abs (transform.position.z - arrayPos[0].z) > sensitivity) {
+				transform.position = Vector3.MoveTowards (transform.position, arrayPos[0], speed * Time.deltaTime);
+			} else {
+				jump = false;
+				arrayPos.RemoveAt (0);
 			}
 		}
+
+		if (Input.GetMouseButtonUp (0)) {
+			if (arrayPos.Count == 0) {
+				arrayPos.Add (transform.position + nextVec);
+			}
+			else {
+				arrayPos.Add (arrayPos [arrayPos.Count - 1] + nextVec);
+			}
+			nJump++;
+			//            StartCoroutine(wait());
+		}
+
+		if (nJump>0&&!jump)
+		{
+			foreach(Vector3 x in arrayPos)
+				print (x);
+			animator.SetTrigger ("Jump");
+			nJump--;
+			StartCoroutine (wait ());
+		}
 	}
-		
-	void Move()
+
+	IEnumerator wait()
 	{
-		rb.AddForce (0, jumpForce, 0);
+		yield return new WaitForSeconds (0.5f);
+		jump = true;
 	}
 }
+
