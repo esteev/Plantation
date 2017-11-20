@@ -85,7 +85,7 @@ public class Spawner : MonoBehaviour {
 					tempInst1.transform.Rotate (new Vector3(0f,180f,0f));
 					tempInst1.tag = "RotatedRoad";
 				}
-				print (tempInst1.ToString() + currentPos.ToString());
+			//	print (tempInst1.ToString() + currentPos.ToString());
 				currentPos = currentPos + new Vector3 (-1*stripWidth , 0f, 0f);
 			}
 			//GameObject tempRoad = Instantiate(curStrip, roadSystemHolder.transform.position, Quaternion.identity);
