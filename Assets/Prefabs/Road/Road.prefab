@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33876516333692908}
   - component: {fileID: 65291773699690074}
   - component: {fileID: 23657695180353392}
+  - component: {fileID: 54234498636830328}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +58,7 @@ GameObject:
   - component: {fileID: 4495208341381962}
   m_Layer: 0
   m_Name: Vehicle Mumbo Jumbo
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,9 +74,10 @@ GameObject:
   - component: {fileID: 33900495066728728}
   - component: {fileID: 65903934465358002}
   - component: {fileID: 23392493464369558}
+  - component: {fileID: 54360803325745492}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,9 +93,10 @@ GameObject:
   - component: {fileID: 33942280509156828}
   - component: {fileID: 65986537684195028}
   - component: {fileID: 23839863986585514}
+  - component: {fileID: 54423816706193620}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,9 +112,10 @@ GameObject:
   - component: {fileID: 33803642039366680}
   - component: {fileID: 65687674999061336}
   - component: {fileID: 23514103348503202}
+  - component: {fileID: 54089925118730446}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,9 +131,10 @@ GameObject:
   - component: {fileID: 33957329407630942}
   - component: {fileID: 65002736386688606}
   - component: {fileID: 23380582177258292}
+  - component: {fileID: 54094595904073708}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,9 +150,10 @@ GameObject:
   - component: {fileID: 33276672924458156}
   - component: {fileID: 65421232369491896}
   - component: {fileID: 23513010824063730}
+  - component: {fileID: 54047665487263302}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +172,7 @@ GameObject:
   - component: {fileID: 114767946483451368}
   m_Layer: 0
   m_Name: StartSpawner
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,9 +188,10 @@ GameObject:
   - component: {fileID: 33403214652187990}
   - component: {fileID: 65340376621614274}
   - component: {fileID: 23579375109758526}
+  - component: {fileID: 54483888381500060}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,9 +207,10 @@ GameObject:
   - component: {fileID: 33023881474191538}
   - component: {fileID: 65154743190756020}
   - component: {fileID: 23133518871647718}
+  - component: {fileID: 54923782129611394}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,9 +226,10 @@ GameObject:
   - component: {fileID: 33146171169079750}
   - component: {fileID: 65267579099591136}
   - component: {fileID: 23122534735528074}
+  - component: {fileID: 54364983711011480}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,9 +245,10 @@ GameObject:
   - component: {fileID: 33736385739482334}
   - component: {fileID: 65655044621390124}
   - component: {fileID: 23563054380106328}
+  - component: {fileID: 54339710419849324}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,7 +267,7 @@ GameObject:
   - component: {fileID: 114487801951709806}
   m_Layer: 0
   m_Name: ObjectDestroyer
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,9 +283,10 @@ GameObject:
   - component: {fileID: 33295780238937840}
   - component: {fileID: 65347133195660314}
   - component: {fileID: 23408256031869980}
+  - component: {fileID: 54598887697337380}
   m_Layer: 0
   m_Name: RoadBlock
-  m_TagString: Untagged
+  m_TagString: Nahi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,6 +1007,171 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1419006119687332}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54047665487263302
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473998774690900}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54089925118730446
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387767362228054}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54094595904073708
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419006119687332}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54234498636830328
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1006601725784594}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54339710419849324
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780682938116610}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54360803325745492
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157759350615800}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54364983711011480
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1735105000158124}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54423816706193620
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349346193259900}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54483888381500060
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669410009769076}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54598887697337380
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938159193582432}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54923782129611394
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684536785984390}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &54981609207361774
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1105,7 +1281,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.1, z: 12}
+  m_Size: {x: 0.4, y: 0.1, z: 14.37}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65577834894896986
 BoxCollider:

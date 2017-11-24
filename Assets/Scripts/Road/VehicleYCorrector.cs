@@ -8,9 +8,10 @@ public class VehicleYCorrector : MonoBehaviour {
 
 	void OnTriggerStay(Collider col)
 	{
-	//	print ("res");
-		if(col.gameObject.tag != "Destroyer")
-			col.gameObject.transform.parent.transform.Translate(new Vector3(0f,smootheningUp,0f));
+		if (col.gameObject.transform.tag == "Enemy") {
+		//	print (col.gameObject.tag);
+			col.gameObject.transform.parent.transform.Translate (new Vector3 (0f, smootheningUp, 0f));
+		}
 	}
 
 }

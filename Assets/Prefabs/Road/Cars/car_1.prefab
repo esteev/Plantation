@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64932376052925136}
   m_Layer: 0
   m_Name: Object003
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114803682928918368}
   m_Layer: 0
   m_Name: car_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 64633705220930874}
   m_Layer: 0
   m_Name: Object004
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 64333568462145022}
   m_Layer: 0
   m_Name: Object008
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 64663675557942684}
   m_Layer: 0
   m_Name: Object007
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 64595862395766362}
   m_Layer: 0
   m_Name: Object006
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -13,6 +13,7 @@ TagManager:
   - Road
   - Type1
   - Type2
+  - Nahi
   layers:
   - Default
   - TransparentFX

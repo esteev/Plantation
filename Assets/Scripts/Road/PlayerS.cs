@@ -3,59 +3,111 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerS : MonoBehaviour {
-
-	private float speed = 5f;
-	private float sensitivity = 0.001f;
+	private float distanceMagnitude = 0.4f;
+	private float speed = 0.01f,rotationSpeed = 5f;
+	private Vector3 toMove;
+	private float toRotate,currentAngle;
+	private float tapCount = 0;
 	private Animator animator;
-	private Vector3 nextVec = new Vector3(0f, 0f, -0.4f), targetPos;
-	private bool jump = false;
-	private int nJump = 0;
-	private List<Vector3> arrayPos = new List<Vector3>();
-
+	public enum RotationSide { up,right,down,left};
+	public float[,] rotationTable = {   {0,90,180,-90 },
+		{-90,0,90,180 },
+		{180,-90,0,90 },
+		{90,180,-90,0 }
+	};
+	RotationSide lastRotation;
 	void Start () {
-		animator = transform.GetChild(0).GetComponent<Animator> ();
+		animator = transform.GetChild (0).GetComponent<Animator> ();
+		//transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+		toMove = transform.position;
+		currentAngle = toRotate = transform.rotation.eulerAngles.y ;
 	}
 
+	float horizontal, vertical;
+	Vector3 tempRotation;
+	float tempRotationY;
 	void Update () {
-		if(Input.GetMouseButtonDown(0))
-		{
-		}
 
-		if (jump) 
+		if (toMove != transform.position)
 		{
-			if (Mathf.Abs (transform.position.z - arrayPos[0].z) > sensitivity) {
-				transform.position = Vector3.MoveTowards (transform.position, arrayPos[0], speed * Time.deltaTime);
-			} else {
-				jump = false;
-				arrayPos.RemoveAt (0);
+			transform.position = Vector3.MoveTowards(transform.position, toMove, speed);
+		}
+		else
+		{
+			horizontal = Input.GetAxis("Horizontal");
+			vertical = Input.GetAxis("Vertical");
+
+			// oldPosition = transform.position;
+			//if swipe
+			if (Mathf.Abs(horizontal) > 0|| Mathf.Abs(vertical) > 0)
+			{
+				//both active disactivate one
+				animator.SetTrigger("Jump");
+				if (Mathf.Abs(horizontal) > 0 && Mathf.Abs(vertical) > 0) horizontal = 0;
+				toMove += new Vector3(horizontal* distanceMagnitude, 0f, vertical *distanceMagnitude);
+			}
+
+		}
+		if (toRotate != currentAngle) {
+
+			tempRotationY = Mathf.MoveTowards(currentAngle, Mathf.Abs(toRotate)
+				,toRotate<0?-1*rotationSpeed:rotationSpeed);
+
+			tempRotation = MakeVectorY(tempRotationY);
+			transform.rotation = Quaternion.Euler(tempRotation);
+			currentAngle = tempRotationY;
+		}
+		else
+		{
+			horizontal = Input.GetAxis("Horizontal");
+			vertical = Input.GetAxis("Vertical");
+			//if swipe   
+			if(Mathf.Abs(horizontal) > 0 || Mathf.Abs(vertical)>0){
+				//up swipe
+				if (vertical == 1)
+				{   
+					toRotate = rotationTable[(int)lastRotation,(int)RotationSide.up];
+					lastRotation = RotationSide.up;
+				}
+				//down swipe
+				else if (vertical == -1)
+				{
+
+
+					toRotate = rotationTable[(int)lastRotation, (int)RotationSide.down];
+					lastRotation = RotationSide.down;
+				}
+				//left swipe
+				else if (horizontal == 1)
+				{
+
+
+					toRotate = rotationTable[(int)lastRotation, (int)RotationSide.right];
+					lastRotation = RotationSide.right;
+				}
+				//right swipe
+				else if(horizontal==-1) {
+
+					toRotate = rotationTable[(int)lastRotation, (int)RotationSide.left];
+					lastRotation = RotationSide.left;
+
+				}
+				toRotate += currentAngle;
 			}
 		}
-
-		if (Input.GetMouseButtonUp (0)) {
-			if (arrayPos.Count == 0) {
-				arrayPos.Add (transform.position + nextVec);
-			}
-			else {
-				arrayPos.Add (arrayPos [arrayPos.Count - 1] + nextVec);
-			}
-			nJump++;
-			//            StartCoroutine(wait());
-		}
-
-		if (nJump>0&&!jump)
+		if (Input.GetButtonUp("Fire1"))
 		{
-			foreach(Vector3 x in arrayPos)
-				print (x);
-			animator.SetTrigger ("Jump");
-			nJump--;
-			StartCoroutine (wait ());
+			if (currentAngle %90== 0)
+				toRotate = currentAngle + rotationTable[(int)lastRotation, (int)RotationSide.up];
+
+			lastRotation = RotationSide.up;
+			toMove += new Vector3(0f, 0f, distanceMagnitude);
 		}
+
 	}
-
-	IEnumerator wait()
+	Vector3 MakeVectorY(float vectorY)
 	{
-		yield return new WaitForSeconds (0.5f);
-		jump = true;
+		return new Vector3(0f, vectorY, 0f);
 	}
-}
 
+}
